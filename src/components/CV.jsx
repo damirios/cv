@@ -6,11 +6,13 @@ import Skills from "./Skills";
 
 import {data} from '../data/russian';
 
-export default function CV(props) {
+import React from "react";
+
+export const CV = React.forwardRef((props, ref) => {
     const {personal, projects, skills, education, courses} = data;
 
     return (
-        <div className="cv">
+        <div className="cv" ref={ref}>
             <div className="container">
                 <div className="cv__column">
                     <Personal data={personal} lang={props.lang} />
@@ -22,4 +24,4 @@ export default function CV(props) {
             </div>
         </div>
     );
-}
+});

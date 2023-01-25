@@ -1,12 +1,12 @@
 @import url("./resetStyle");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@400;600&family=Unbounded&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
 #root {
   height: 100%;
 }
 
 .App {
-  min-height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Unbounded";
   color: #333;
 }
 
@@ -105,7 +105,7 @@
   font-size: 18px;
 }
 .project__github {
-  flex: 0 0 33%;
+  flex: 0 0 40%;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -118,6 +118,11 @@
 .project__github p p:first-child {
   margin-bottom: 5px;
   font-weight: 600;
+}
+.project__github p p a {
+  text-decoration: none;
+  font-family: "Roboto";
+  letter-spacing: 0.6px;
 }
 
 .skills {
@@ -199,6 +204,7 @@
   font-weight: 600;
 }
 .course__desc {
-  font-size: 18px;
+  font-family: "Roboto";
+  font-size: 20px;
   font-style: italic;
 }
