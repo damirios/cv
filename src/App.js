@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className="App">
 			<CV ref={componentRef} lang='ru' />
-			<button onClick={handlePrint} >Print!</button>
+			{/* <button onClick={handlePrint} >Print!</button> */}
 		</div>
 	);
 }
