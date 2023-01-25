@@ -1,0 +1,204 @@
+@import url("./resetStyle");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@400;600&family=Unbounded&display=swap");
+#root {
+  height: 100%;
+}
+
+.App {
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.cv {
+  background-color: rgb(244, 244, 244);
+  padding: 30px 20px;
+}
+.cv__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-title {
+  font-family: "Unbounded";
+  font-size: 24px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.personal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.personal__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.personal__name {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.personal__position {
+  font-size: 18px;
+}
+.personal__github {
+  text-align: right;
+}
+.personal__email {
+  text-align: right;
+}
+.personal__phone {
+  text-align: right;
+}
+
+.projects {
+  margin-bottom: 20px;
+}
+.projects__list {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(95, 95, 95);
+}
+.project:last-child {
+  border-bottom: 0;
+}
+.project__info {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.project__title {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.project__techs-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.project__techs-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.project__tech {
+  font-size: 18px;
+}
+.project__github {
+  flex: 0 0 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  row-gap: 10px;
+  font-size: 20px;
+}
+.project__github p p {
+  margin-bottom: 15px;
+}
+.project__github p p:first-child {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.skills {
+  margin-bottom: 10px;
+}
+.skills__list {
+  padding: 20px 15px;
+  font-size: 22px;
+}
+
+.education__list {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.education__university-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.education__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 20px;
+  border-bottom: 1px solid rgb(95, 95, 95);
+}
+.education__item:last-child {
+  border-bottom: 0;
+}
+.education__university {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+}
+.education__speciality {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: italic;
+}
+.education__period-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.education__city {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: right;
+}
+.education__period {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: italic;
+  text-align: right;
+}
+
+.courses__list {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid rgb(95, 95, 95);
+}
+.course:last-child {
+  border-bottom: 0;
+}
+.course__title {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+}
+.course__desc {
+  font-size: 18px;
+  font-style: italic;
+}

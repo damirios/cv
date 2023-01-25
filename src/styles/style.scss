@@ -1,0 +1,250 @@
+@import url('./resetStyle');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@400;600&family=Unbounded&display=swap');
+
+#root {
+    height: 100%;
+}
+
+.App {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 1270px; // 1240px - ширина А4 при dpi = 150
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// CV =========================================================================================================================
+.cv {
+    // height: 1754px; // высота А4 при dpi = 150
+    background-color: rgb(244, 244, 244);
+    padding: 30px 20px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.block-title {
+    font-family: 'Unbounded';
+    font-size: 24px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+// PERSONAL =========================================================================================================================
+.personal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__name {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    &__position {
+        font-size: 18px;
+    }
+
+    &__github {
+        text-align: right;
+    }
+
+    &__email {
+        text-align: right;
+    }
+
+    &__phone {
+        text-align: right;
+    }
+}
+
+// PROJECTS =========================================================================================================================
+.projects {
+    margin-bottom: 20px;
+
+    &__list {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.project {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(95, 95, 95);
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    &__info {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    &__techs {
+        &-title {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        &-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+    }
+
+    &__tech {
+        font-size: 18px;
+    }
+
+    &__github {
+        flex: 0 0 33%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        row-gap: 10px;
+        font-size: 20px;
+
+        & p {
+            & p {
+                margin-bottom: 15px;
+                &:first-child {
+                    margin-bottom: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+// SKILLS =========================================================================================================================
+.skills {
+    margin-bottom: 10px;
+
+    &__list {
+        padding: 20px 15px;
+        font-size: 22px;
+    }
+}
+
+// EDUCATION =========================================================================================================================
+.education {
+
+    &__list {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    &__university-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 20px;
+        border-bottom: 1px solid rgb(95, 95, 95);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__university {
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__speciality {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    &__period-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__city {
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 600;
+        text-align: right;
+    }
+
+    &__period {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-style: italic;
+        text-align: right;
+    }
+}
+
+// COURESE =========================================================================================================================
+.courses {
+    &__list {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid rgb(95, 95, 95);
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__desc {
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+
